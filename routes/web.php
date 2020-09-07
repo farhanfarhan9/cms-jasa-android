@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('frontend.index');
 });
-Route::get('/s', function () {
-    return view('backend.index');
+Route::get('/dashboard', function () {
+    return view('dashboard.index');
 });
+
+Route::resource('dashboard/categories', 'CategoriesController');
+
