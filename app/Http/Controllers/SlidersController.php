@@ -25,7 +25,7 @@ class SlidersController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.slider.create');
     }
 
     /**
@@ -36,7 +36,15 @@ class SlidersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // dd(request()->all());
+        $new_slider = new \App\Slider;
+        $new_slider->nama_slider = $request->get('nama_slider');
+        if ($request->file('foto')) {
+            $file = $request->file('foto')->store('slider','public');
+            $new_slider->foto = $file;
+        };
+        $new_slider->save();
+        return redirect('/dashboard/sliders');
     }
 
     /**
@@ -56,9 +64,9 @@ class SlidersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Slider $slider)
     {
-        //
+        return view('dashboard.slider.edit', compact('slider'));
     }
 
     /**
@@ -70,7 +78,18 @@ class SlidersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $slider = \App\Slider::findOrFail($id);
+        $slider->nama_slider = $request->get("nama_slider");
+        if ($request->file('foto')) {
+            if($slider->foto && file_exists(storage_path('app/public/' . $slider->foto))){
+                \Storage::delete('public/'.$slider->foto);
+            }
+            $file = $request->file('foto')->store('slider','public');
+            $slider->foto = $file;
+        };
+        $slider->save();
+        return redirect('/dashboard/sliders');
+
     }
 
     /**
@@ -79,8 +98,9 @@ class SlidersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Slider $slider)
     {
-        //
+        $slider->delete();
+        return redirect('/dashboard/sliders');
     }
 }
