@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Category;
+use App\Blog;
 
-class CategoriesController extends Controller
+class BlogsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,9 @@ class CategoriesController extends Controller
      */
     public function index()
     {
-        $categories = Category::all();
+        $blogs = Blog::all();
 
-        return view('dashboard.category.index', compact('categories'));
+        return view('dashboard.blog.index', compact('blogs'));
     }
 
     /**
@@ -25,8 +25,8 @@ class CategoriesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {  
-        return view('dashboard.category.create');
+    {
+        return view('dashboard.blog.create');
     }
 
     /**
@@ -35,18 +35,9 @@ class CategoriesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store()
+    public function store(Request $request)
     {
-
-        Category::create([
-            'nama_kategori'=>request('nama_kategori'),
-        ]);
-
-        // Category::create([
-        //     'nama_kategori'=>request('nama_kategori'),
-        // ]);
-
-        return redirect('/dashboard/categories');
+        //
     }
 
     /**
@@ -66,10 +57,9 @@ class CategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Category $category)
+    public function edit($id)
     {
-        return view('dashboard.category.edit', compact('category'));
-        
+        //
     }
 
     /**
@@ -79,14 +69,9 @@ class CategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Category $category)
+    public function update(Request $request, $id)
     {
-
-        $category->nama_kategori = request('nama_kategori');
-
-        $category->save();
-        return redirect('/dashboard/categories');
-
+        //
     }
 
     /**
@@ -95,10 +80,8 @@ class CategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Category $category)
+    public function destroy($id)
     {
-        $category->delete();
-
-        return redirect('/dashboard/categories');
+        //
     }
 }

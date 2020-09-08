@@ -18,7 +18,8 @@ Route::get('/', function () {
 });
 Route::get('/dashboard', function () {
     return view('dashboard.index');
-});
+})->name('dashboard');
 
 Route::resource('dashboard/categories', 'CategoriesController');
+Route::resource('dashboard/blogs', 'BlogsController');
 

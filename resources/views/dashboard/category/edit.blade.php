@@ -8,13 +8,14 @@
 	</ol>
 		<div class="card">
             <div class="card-body">
-                <form action="/dashboard/categories" method="post">
+                <form action="/dashboard/categories/{{ $category->id }}" method="post">
                     @csrf
+                    @method('patch')
                     <div class="form-group">
                         <label for="">Nama Kategori</label>
-                        <input type="text" class="form-control" name="nama_kategori">
+                        <input type="text" class="form-control" name="nama_kategori" value="{{ $category->nama_kategori }}">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Update</button>
                 </form>
             </div>  
         </div>
