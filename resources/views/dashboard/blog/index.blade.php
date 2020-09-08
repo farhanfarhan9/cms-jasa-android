@@ -30,7 +30,7 @@
                         <td>{{ $blog->judul_blog }}</td>
                         <td>{{ $blog->deskripsi }}</td>
                         <td>{{ $blog->konten }}</td>
-                        <td>{{ $blog->foto }}</td>
+                        <td class="text-center"><img src="{{asset('storage/'.$blog->foto)}}" width="110px" alt=""></td>
                     	<td class="text-center">
                     		<a href="/dashboard/blogs/{{ $blog->id }}/edit" class="btn btn-sm btn-success">Edit</a>
                     		<form method="POST" action="/dashboard/blogs/{{ $blog->id }}" >
