@@ -25,4 +25,5 @@ Route::resource('dashboard/blogs', 'BlogsController');
 Route::resource('dashboard/sliders', 'SlidersController');
 Route::resource('dashboard/contacts', 'ContactsController');
 Route::resource('dashboard/galleries', 'GalleriesController');
+Route::resource('dashboard/testimonies', 'TestimoniesController');
 

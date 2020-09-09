@@ -60,7 +60,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Galleri
                             </a>
-                            <a class="nav-link" href="tables.html">
+                            <a class="nav-link" href="{{ route('testimonies.index')}}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Testimoni
                             </a>
