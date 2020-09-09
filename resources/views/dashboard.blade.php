@@ -56,7 +56,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Kontak
                             </a>
-                            <a class="nav-link" href="tables.html">
+                            <a class="nav-link" href="{{ route('galleries.index')}}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Galleri
                             </a>
