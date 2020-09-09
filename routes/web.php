@@ -23,4 +23,5 @@ Route::get('/dashboard', function () {
 Route::resource('dashboard/categories', 'CategoriesController');
 Route::resource('dashboard/blogs', 'BlogsController');
 Route::resource('dashboard/sliders', 'SlidersController');
+Route::resource('dashboard/contacts', 'ContactsController');
 

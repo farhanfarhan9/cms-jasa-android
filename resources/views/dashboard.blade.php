@@ -52,7 +52,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Slider
                             </a>
-                            <a class="nav-link" href="tables.html">
+                            <a class="nav-link" href="{{ route('contacts.index')}}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Kontak
                             </a>
