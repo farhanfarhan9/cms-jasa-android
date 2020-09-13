@@ -15,8 +15,7 @@ class BlogsController extends Controller
      */
     public function index()
     {
-        $blogs = Blog::all();
-
+        $blogs = Blog::with('category')->get();
         return view('dashboard.blog.index', compact('blogs'));
     }
 
@@ -74,7 +73,8 @@ class BlogsController extends Controller
      */
     public function edit(Blog $blog)
     {
-        return view('dashboard.blog.edit', ['blog'=>$blog]);
+        $categories = Category::all();
+        return view('dashboard.blog.edit', ['blog'=>$blog, 'categories' => $categories]);
     }
 
     /**
@@ -86,7 +86,20 @@ class BlogsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $blog = \App\Blog::findOrFail($id);
+        $blog->category_id = $request->get('id_kategori');
+        $blog->judul_blog = $request->get('judul');
+        $blog->deskripsi = $request->get('deskripsi');
+        $blog->konten = $request->get('konten');
+        if ($request->file('foto')) {
+            if($blog->foto && file_exists(storage_path('app/public/' . $blog->foto))){
+                \Storage::delete('public/'.$blog->foto);
+            }
+            $file = $request->file('foto')->store('blog','public');
+            $blog->foto = $file;
+        };
+        $blog->save();
+        return redirect('/dashboard/blogs');
     }
 
     /**

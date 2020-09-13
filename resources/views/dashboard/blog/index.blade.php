@@ -26,7 +26,7 @@
                     <tr>
 
                     	<td> <?= $no ?></td>
-                    	<td>{{ $blog->category_id }}</td>
+                    	<td>{{ $blog->category->nama_kategori }}</td>
                         <td>{{ $blog->judul_blog }}</td>
                         <td>{{ $blog->deskripsi }}</td>
                         <td>{{ $blog->konten }}</td>
