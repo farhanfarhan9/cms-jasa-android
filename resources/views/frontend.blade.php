@@ -21,7 +21,7 @@ Author URL: http://w3layouts.com
 <div class="w3l-bootstrap-header fixed-top">
   <nav class="navbar navbar-expand-lg navbar-light p-2">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><span class="fa fa-diamond"></span>Market</a>
+      <a class="navbar-brand" href="index.html"><span class="fa fa-diamond"></span><TABLE>TOKOKU</TABLE></a>
       <!-- if logo is image enable this   
     <a class="navbar-brand" href="#index.html">
         <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
@@ -34,18 +34,20 @@ Author URL: http://w3layouts.com
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="../about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="../blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact">Contact</a>
           </li>
         </ul>
         <div class="form-inline">
-          <a href="#login.html" class="login mr-4">Log in</a>
-            <a href="#signup.html" class="btn btn-primary btn-theme">Create Free Account</a>
+            <a href="../login" class="btn btn-primary btn-theme">LOGIN</a>
         </div>
       </div>
     </div>
@@ -62,76 +64,9 @@ Author URL: http://w3layouts.com
                   <h6 class="footer-title-28">Contact information</h6>
                   <ul>
                     <li>
-                      <p><strong>Address</strong> : #135 block, Barnard St. Brooklyn, NY 10036, USA</p>
-                    </li>
-                    <li>
-                      <p><strong>Phone</strong> : <a href="tel:+404-11-22-89">+404-11-22-89</a></p>
-                    </li>
-                    <li>
-                      <p><strong>Email</strong> : <a href="mailto:example@mail.com">example@mail.com</a></p>
+                      <p><strong>Email</strong> : Dilomedan@gmail.com</p>
                     </li>
                   </ul>
-
-                  <div class="main-social-footer-28 mt-3">
-                    <ul class="social-icons">
-                      <li class="facebook">
-                        <a href="#link" title="Facebook">
-                          <span class="fa fa-facebook" aria-hidden="true"></span>
-                        </a>
-                      </li>
-                      <li class="twitter">
-                        <a href="#link" title="Twitter">
-                          <span class="fa fa-twitter" aria-hidden="true"></span>
-                        </a>
-                      </li>
-                      <li class="dribbble">
-                        <a href="#link" title="Dribbble">
-                          <span class="fa fa-dribbble" aria-hidden="true"></span>
-                        </a>
-                      </li>
-                      <li class="google">
-                        <a href="#link" title="Google">
-                          <span class="fa fa-google" aria-hidden="true"></span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-md-4 footer-list-28 mt-5">
-                      <h6 class="footer-title-28">Company</h6>
-                      <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#blog.html">Blog Posts</a></li>
-                        <li><a href="#pricing.html">FAQ</a></li>
-                        <li><a href="#pricing.html">Pricing</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-md-4 footer-list-28 mt-5">
-                      <h6 class="footer-title-28">Support</h6>
-                      <ul>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="#signup.html">Create account</a></li>
-                        <li><a href="#learn.html">Learning Center</a></li>
-                        <li><a href="#career.html">Team</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-md-4 footer-list-28 mt-5">
-                      <h6 class="footer-title-28">Product</h6>
-                      <ul>
-                        <li><a href="#URL">Market</a></li>
-                        <li><a href="#URL">VIP</a></li>
-                        <li><a href="#URL">Resources</a></li>
-                        <li><a href="#URL">Sale</a></li>
-                        <li><a href="#URL">Admin UI</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
 
             <div class="midd-footer-28 align-center py-lg-4 py-3 mt-5">
               <div class="container">
