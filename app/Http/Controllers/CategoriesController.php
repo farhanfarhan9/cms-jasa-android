@@ -14,7 +14,9 @@ class CategoriesController extends Controller
      */
     public function index()
     {
-        return view('dashboard.category.index');
+        $categories = Category::all();
+
+        return view('dashboard.category.index', compact('categories'));
     }
 
     /**
@@ -33,9 +35,18 @@ class CategoriesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store()
     {
-        //
+
+        Category::create([
+            'nama_kategori'=>request('nama_kategori'),
+        ]);
+
+        // Category::create([
+        //     'nama_kategori'=>request('nama_kategori'),
+        // ]);
+
+        return redirect('/dashboard/categories');
     }
 
     /**
@@ -55,9 +66,10 @@ class CategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Category $category)
     {
-        //
+        return view('dashboard.category.edit', compact('category'));
+        
     }
 
     /**
@@ -67,9 +79,14 @@ class CategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Category $category)
     {
-        //
+
+        $category->nama_kategori = request('nama_kategori');
+
+        $category->save();
+        return redirect('/dashboard/categories');
+
     }
 
     /**
@@ -78,8 +95,10 @@ class CategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Category $category)
     {
-        //
+        $category->delete();
+
+        return redirect('/dashboard/categories');
     }
 }

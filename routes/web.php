@@ -71,8 +71,16 @@ Route::get('/news3', function () {
 
 });
 Route::get('/dashboard', function () {
-    return view('dashboard.');
-});
+    return view('dashboard.index');
+})->name('dashboard');
 
 Route::resource('dashboard/categories', 'CategoriesController');
+Route::resource('dashboard/blogs', 'BlogsController');
+Route::resource('dashboard/sliders', 'SlidersController');
+Route::resource('dashboard/contacts', 'ContactsController');
+Route::resource('dashboard/galleries', 'GalleriesController');
+Route::resource('dashboard/testimonies', 'TestimoniesController');
+// Route::get('ckeditor-demo',function(){
+//     return view('ckeditor.index');
+// });
 
