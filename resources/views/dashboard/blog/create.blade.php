@@ -31,7 +31,7 @@
                 </div>
                 <div class="form-group">
                     <label for="">Konten</label>
-                    <textarea class="form-control" name="konten"></textarea>
+                    <textarea id="editor1" rows="10" cols="80" class="form-control editor1" name="konten"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="">Foto</label>
@@ -42,4 +42,5 @@
         </div> 
     </div>
 </div>
+    
 @endsection

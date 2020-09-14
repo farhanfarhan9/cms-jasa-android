@@ -18,7 +18,7 @@ class CreateBlogsTable extends Migration
             $table->unsignedInteger('category_id');
             $table->string('judul_blog');
             $table->string('deskripsi');
-            $table->string('konten');
+            $table->text('konten');
             $table->string('foto');
             $table->timestamps();
         });

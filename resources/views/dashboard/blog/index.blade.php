@@ -21,8 +21,8 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @php $no=1 @endphp
                 	@foreach($blogs as $blog)
-                	<?php $no=1 ?>
                     <tr>
 
                     	<td> <?= $no ?></td>
@@ -41,8 +41,9 @@
 								</div>
 							</form>
                     	</td>
+                    @php $no++; @endphp
+                        
                     </tr>
-                    <?php $no++; ?>
                     @endforeach
                 </tbody>
             </table>

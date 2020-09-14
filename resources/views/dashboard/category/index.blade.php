@@ -17,8 +17,9 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @php $no=1 @endphp
                 	@foreach($categories as $category)
-                	<?php $no=1 ?>
+                	
                     <tr>
 
                     	<td> <?= $no ?></td>
@@ -34,7 +35,7 @@
 							</form>
                     	</td>
                     </tr>
-                    <?php $no++; ?>
+                    @php $no++; @endphp
                     @endforeach
                 </tbody>
             </table>
