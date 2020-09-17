@@ -23,7 +23,7 @@
                 </div>
                 <div class="form-group">
                     <label for="">Judul</label>
-                    <input type="text" class="form-control" name="judul">
+                    <input type="text" class="form-control border border-primary" name="judul">
                 </div>
                 <div class="form-group">
                     <label for="">Deskripsi</label>
@@ -31,7 +31,7 @@
                 </div>
                 <div class="form-group">
                     <label for="">Konten</label>
-                    <textarea id="editor1" rows="10" cols="80" class="form-control editor1" name="konten"></textarea>
+                    <textarea id="my-editor" name="konten" class="form-control"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="">Foto</label>

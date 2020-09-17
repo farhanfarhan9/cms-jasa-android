@@ -36,12 +36,15 @@ class ContactsController extends Controller
      */
     public function store(Request $request)
     {
-        Contact::create([
-            'nama_kontak'=>request('nama_kontak'),
-            'alamat'=>request('alamat'),
-            'email'=>request('email'),
-            'pesan'=>request('pesan'),
+
+        $validated = request()->validate([
+            'nama_kontak'=>['required', 'min:3', 'max:255'],
+            'alamat'=>['required', 'min:3', 'max:255'],
+            'email'=>['required', 'min:3', 'max:255'],
+            'pesan'=>['required', 'min:3', 'max:255'],
         ]);
+
+        Contact::create($validated);
 
         return redirect('/dashboard/contacts');
 
@@ -83,7 +86,7 @@ class ContactsController extends Controller
         $contact->alamat = request('alamat');
         $contact->email = request('email');
         $contact->pesan = request('pesan');
-
+        
         $contact->save();
         return redirect('/dashboard/contacts');
     }

@@ -32,12 +32,13 @@
                         <td>{{ $blog->konten }}</td>
                         <td class="text-center"><img src="{{asset('storage/'.$blog->foto)}}" width="110px" alt=""></td>
                     	<td class="text-center">
-                    		<a href="/dashboard/blogs/{{ $blog->id }}/edit" class="btn btn-sm btn-success">Edit</a>
+                    		<a href="/dashboard/blogs/{{ $blog->id }}" class="btn btn-sm btn-primary mb-1">Lihat</a>
+                            <a href="/dashboard/blogs/{{ $blog->id }}/edit" class="btn btn-sm btn-success mb-1">Edit</a><br>
                     		<form method="POST" action="/dashboard/blogs/{{ $blog->id }}" >
 								@csrf
 								@method('DELETE')
 								<div class="control">
-									<button type="submit" class="btn btn-sm btn-danger">Delete</button>
+									<button type="submit" class="btn btn-sm btn-danger" onClick="return confirm('Yakin ingin?')">Delete</button>
 								</div>
 							</form>
                     	</td>
