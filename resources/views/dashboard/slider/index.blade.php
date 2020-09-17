@@ -31,7 +31,7 @@
                                 @csrf
                                 @method('DELETE')
                                 <div class="control">
-                                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                                    <button type="submit" class="btn btn-sm btn-danger" onClick="return confirm('Yakin ingin menghapus item?')">Delete</button>
                                 </div>
                             </form>
                         </td>

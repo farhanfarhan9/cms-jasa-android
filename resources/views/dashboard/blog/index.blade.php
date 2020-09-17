@@ -15,7 +15,6 @@
                         <th>Jenis Kategori</th>
                         <th>Judul</th>
                         <th>Deskripsi</th>
-                        <th>Konten</th>
                         <th>Foto</th>
                         <th class="text-center">Aksi</th>
                     </tr>
@@ -29,7 +28,6 @@
                     	<td>{{ $blog->category->nama_kategori }}</td>
                         <td>{{ $blog->judul_blog }}</td>
                         <td>{{ $blog->deskripsi }}</td>
-                        <td>{{ $blog->konten }}</td>
                         <td class="text-center"><img src="{{asset('storage/'.$blog->foto)}}" width="110px" alt=""></td>
                     	<td class="text-center">
                     		<a href="/dashboard/blogs/{{ $blog->id }}" class="btn btn-sm btn-primary mb-1">Lihat</a>
@@ -38,7 +36,7 @@
 								@csrf
 								@method('DELETE')
 								<div class="control">
-									<button type="submit" class="btn btn-sm btn-danger" onClick="return confirm('Yakin ingin?')">Delete</button>
+									<button type="submit" class="btn btn-sm btn-danger" onClick="return confirm('Yakin ingin menghapus?')">Delete</button>
 								</div>
 							</form>
                     	</td>

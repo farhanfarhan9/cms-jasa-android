@@ -16,6 +16,11 @@ Author URL: http://w3layouts.com
     <!-- //web fonts -->
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
+    <style type="text/css">
+        .tombol{
+        background-color: #2c96d2;
+        }
+    </style>
   </head>
   <body>
 <div class="w3l-bootstrap-header fixed-top">
@@ -47,7 +52,7 @@ Author URL: http://w3layouts.com
           </li>
         </ul>
         <div class="form-inline">
-            <a href="../login" class="btn btn-primary btn-theme">LOGIN</a>
+            <a href="../login" class="btn tombol btn-theme">LOGIN</a>
         </div>
       </div>
     </div>

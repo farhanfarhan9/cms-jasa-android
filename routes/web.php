@@ -76,6 +76,7 @@ Route::resource('dashboard/sliders', 'SlidersController')->middleware('auth');
 Route::resource('dashboard/contacts', 'ContactsController')->middleware('auth');
 Route::resource('dashboard/galleries', 'GalleriesController')->middleware('auth');
 Route::resource('dashboard/testimonies', 'TestimoniesController')->middleware('auth');
+Route::resource('dashboard/products', 'ProductsController')->middleware('auth');
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
      \UniSharp\LaravelFilemanager\Lfm::routes();
  });
