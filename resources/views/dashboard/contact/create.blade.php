@@ -12,21 +12,22 @@
                     @csrf
                     <div class="form-group">
                         <label for="">Nama Kontak</label>
-                        <input type="text" class="form-control" name="nama_kontak">
+                        <input type="text" class="form-control {{ $errors->has('nama_kontak')? 'border border-danger' :'' }}" name="nama_kontak" value="{{ old('nama_kontak') }}">
                     </div>
                     <div class="form-group">
                         <label for="">Alamat</label>
-                        <input type="text" class="form-control" name="alamat">
+                        <input type="text" class="form-control {{ $errors->has('alamat')? 'border border-danger' :'' }}" name="alamat" value="{{ old('alamat') }}">
                     </div>
                     <div class="form-group">
                         <label for="">Email</label>
-                        <input type="text" class="form-control" name="email">
+                        <input type="text" class="form-control {{ $errors->has('email')? 'border border-danger' :'' }}" name="email" value="{{ old('email') }}">
                     </div>
                     <div class="form-group">
                         <label for="">Pesan</label>
-                        <textarea class="form-control" name="pesan"></textarea>
+                        <textarea class="form-control {{ $errors->has('pesan')? 'border border-danger' :'' }}" name="pesan">{{ old('pesan') }}</textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
+                    @include('errors')
                 </form>
             </div>  
         </div>

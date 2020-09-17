@@ -60,9 +60,10 @@ class BlogsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Blog $blog)
     {
-        //
+        $categories = Category::all();
+        return view('dashboard.blog.show', ['blog'=>$blog, 'categories' => $categories]);
     }
 
     /**
@@ -108,8 +109,10 @@ class BlogsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Blog $blog)
     {
-        //
+        $blog->delete();
+
+        return redirect('/dashboard/blogs');
     }
 }
