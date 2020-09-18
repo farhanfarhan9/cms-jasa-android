@@ -7,10 +7,7 @@
     <div class="container">
       <div class="row align-items-center py-md-5 py-3">
         <div class="col-md-5 content-left pt-md-0 pt-5">
-          <h1>Meet with us to success dream business</h1>
-          <p class="mt-3 mb-md-5 mb-4">Making use of the respective industries and our team works. Build an online presence with this professional 
-            bootstrap 4 template.</p>
-          <a href="../login" class="btn btn-primary btn-theme">Get Started</a>
+          <a href="../pesansekarang" class="btn biru btn-lg text-white">Pesan Sekarang</a>
         </div>
         <div class="col-md-7 content-photo mt-md-0 mt-5">
           <img src="assets/images/main.jpg" class="img-fluid" alt="main image">
@@ -29,7 +26,7 @@
     </div>
     <div class="row bottom_grids pt-md-3">
       <div class="col-lg-4 col-md-6 mt-5">
-        <div class="s-block">
+        <div class="s-block p-3">
          
             <img src="assets/images/s1.png" alt="" class="img-fluid" />
             <h3 class="my-3">Global Network</h3>
@@ -38,7 +35,7 @@
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mt-5">
-        <div class="s-block">
+        <div class="s-block p-3">
             <img src="assets/images/s2.png" alt="" class="img-fluid" />
             <h3 class="my-3">High Benefits</h3>
             <p class="">Our goal is to help our companies maintain or achieve best in class positions. Build an online presence with this professional bootstrap 4 template.</p>
@@ -46,7 +43,7 @@
         </div>
       </div>
       <div class="col-lg-4 mt-5">
-        <div class="s-block">
+        <div class="s-block p-3">
             <img src="assets/images/s3.png" alt="" class="img-fluid" />
             <h3 class="my-3">Partnership</h3>
             <p class="">Our goal is to help our companies maintain or achieve best in class positions. Build an online presence with this professional bootstrap 4 template.</p>
@@ -62,9 +59,6 @@
   <div class="section-info py-5">
     <div class="container py-md-3">
       <div class="row cwp17-two align-items-center">
-        <div class="col-md-6 cwp17-image">
-          <img src="assets/images/business.png" class="img-fluid" alt="" />
-        </div>
       </div>
     </div>
   </div>
@@ -229,10 +223,10 @@
 <section class="w3l-index-block8 py-5">
   <div class="container py-md-3 text-center">
     <div class="heading text-center mx-auto">
-      <h3 class="head">Ready to get started? </h3>
+      <h3 class="head">Ready to get started </h3>
     </div>
     <div class="buttons mt-4">
-      <a href="../login" class="btn btn-primary btn-demo ml-2">Get Started</a>
+      <a href="../pesansekarang" class="btn biru btn-lg text-white">Pesan Sekarang</a>
     </div>
   </div>
 </section>

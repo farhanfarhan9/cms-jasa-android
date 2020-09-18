@@ -7,6 +7,11 @@
         <div class="col-md-5 col-md-offset-3 content-left pt-md-0 pt-5">
 	
 	<!-- <div class="row"> -->
+		<style type="text/css">
+      .biru{
+        background-color: #2c96d2;
+      }
+    </style>
 		<div class="card">
 			<div class="card-body">
 				<form>
@@ -41,3 +46,5 @@
 </div>
 </div>
 @endsection
+
+				    		

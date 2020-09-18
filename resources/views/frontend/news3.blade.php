@@ -9,7 +9,7 @@
 
       <!-- Post Content Column -->
 
-      <div class="col-lg-8">
+      <div class="col-lg-12">
 
         <!-- Title -->
         <h1 class="mt-4">Post Title</h1>

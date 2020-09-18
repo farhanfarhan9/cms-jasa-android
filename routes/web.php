@@ -30,6 +30,22 @@ Route::get('/contact', function () {
     return view('frontend.contact');
 
 });
+Route::get('/pesansekarang', function () {
+    return view('frontend.pesansekarang');
+
+});
+Route::get('/hosting', function () {
+    return view('frontend.hosting');
+
+});
+Route::get('/domain', function () {
+    return view('frontend.domain');
+
+});
+Route::get('/promo', function () {
+    return view('frontend.promo');
+
+});
 
 Route::get('/mobile', function () {
     return view('frontend.mobile');

@@ -16,12 +16,17 @@ Author URL: http://w3layouts.com
     <!-- //web fonts -->
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
+    <style type="text/css">
+      .biru{
+        background-color: #2c96d2;
+      }
+    </style>
   </head>
   <body>
 <div class="w3l-bootstrap-header fixed-top">
   <nav class="navbar navbar-expand-lg navbar-light p-2">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><span class="fa fa-diamond"></span><TABLE>TOKOKU</TABLE></a>
+      <a class="navbar-brand" href="index.html"><span class=""></span><TABLE><img src="assets/images/logoalgotech.png" width="140px"></TABLE></a>
       <!-- if logo is image enable this   
     <a class="navbar-brand" href="#index.html">
         <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
@@ -40,6 +45,15 @@ Author URL: http://w3layouts.com
             <a class="nav-link" href="../about">About</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="../domain">Domain</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../hosting">Hosting</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../promo">Promo</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="../blog">Blog</a>
           </li>
           <li class="nav-item">
@@ -47,7 +61,7 @@ Author URL: http://w3layouts.com
           </li>
         </ul>
         <div class="form-inline">
-            <a href="../login" class="btn btn-primary btn-theme">LOGIN</a>
+            <a href="../pesansekarang" class="btn biru btn-lg text-white">Pesan Sekarang</a>
         </div>
       </div>
     </div>
@@ -55,145 +69,70 @@ Author URL: http://w3layouts.com
 </div>
 @yield('content')
       <!-- footer-28 block -->
-      <section class="w3l-market-footer">
-        <footer class="footer-28">
-          <div class="footer-bg-layer">
-            <div class="container py-lg-3">
-              <div class="row footer-top-28">
-                <div class="col-md-6 footer-list-28 mt-5">
-                  <h6 class="footer-title-28">Contact information</h6>
-                  <ul>
-                    <li>
-                      <p><strong>Email</strong> : Dilomedan@gmail.com</p>
-                    </li>
-                  </ul>
+<section class="w3l-footer-29-main">
+<div class="footer-29 py-5">
+<div class="container py-lg-4">
+<div class="row footer-top-29">
+<div class="col-lg-3 col-md-6 col-sm-5 footer-list-29 footer-1">
+<div class="footer-logo mb-4">
+<a class="navbar-brand" href="
+<span></span><img src="https://jasa-website.id/assets/images/logoalgotech.png" alt="Jasa Pembuatan Website Profesional" title="Jasa Pembuatan Website Profesional" style="height:55px;" /><span class="logo"></span></a>
+  </div>
+   <ul>
+      <a class="navbar-brand" href="index.html"><span class=""></span><TABLE><img src="assets/images/logoalgotech.png" width="140px"></TABLE></a>
+      <li><a href=""><span class="fa fa-phone"></span> +62 812 6363 0633</a></li>
+      <li><a href" class="mail"><span class="fa fa-envelope-open-o"></span>
+      <span class="__cf_email__" data-cfemail="5b3a373c3429322f363a752f3e38331b3c363a323775383436">Algoritma.tech@gmail.com</span></a></li>
+    </ul>
+  </div>
+<div class="col-lg-2 col-md-6 col-sm-7 offset-lg-1 col-6 footer-list-29 footer-2 mt-sm-0 mt-5">
+<ul>
+<h6 class="footer-title-29">Link Cepat</h6>
+<li><a href="#">Home</a></li>
+<li><a href="#" >Tentang Kami</a></li>
+<li><a href="#" >Domain</a></li>
+<li><a href="#">Hosting</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Promo</a></li>
+<li><a href="#">Kontak</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-3 mt-lg-0 mt-5">
+<h6 class="footer-title-29">Layanan Kami</h6>
+<ul>
+<li><a href="" title="Jasa Pembuatan Website">Jasa Pembuatan Website</a></li>
+<li><a href="" title="Jasa Pembuatan Aplikasi Andoid">Jasa Pembuatan Aplikasi Andoid</a></li>
+<li><a href="" title="Jasa Pembuatan Aplikasi IOS">Jasa Pembuatan Aplikasi IOS</a></li>
+<li><a href="" title="Jasa Seo Profesional">Jasa Seo Profesional</a></li>
+<li><a href="" title="Jasa Perbaikan Website">Jasa Perbaikan Website</a></li>
+</ul>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5">
+<h6 class="footer-title-29">Hubungi Kami</h6>
+<p>Apabila anda memiliki pertanyaan lebih lanjut, kami siap membantu anda untuk menjawab semua pertanyaan anda.</p>
+<form action="#" class="subscribe" method="post">
+<input type="email" name="email" class="form-control" placeholder="Your Email Address" required="">
+<button class="btn btn-sm biru pl-3 pr-3 mt-2 text-white"><span class="fa fa-envelope-o"></span></button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+  <div class="floatwa">
+  <a rel="noopener" href="";text=Halo%20jasawebsite.id,%20Saya%20mau%20order" target="_blank"><div class="tombolwa"></div></a>
+  </div>
+<section class="w3l-footer-29-main w3l-copyright">
+  <div class="container">
+  <div class="row bottom-copies">
+  <p class="col-lg-8 copy-footer-29">© 2020 Jasa Pembuatan Website Profesional<a href="#" target="_blank">
+  Algotech.co.id</a></p>
+  <div class="col-lg-4 main-social-footer-29">
+  <a href="" class="facebook"><span class="fa fa-facebook"></span></a>
+  <a href="" class="twitter"><span class="fa fa-twitter"></span></a>
+  <a href="" class="instagram"><span class="fa fa-instagram"></span></a>
+  <a href="" class="linkedin"><span class="fa fa-linkedin"></span></a>
+</div>
+</div>
+</div>
 
-            <div class="midd-footer-28 align-center py-lg-4 py-3 mt-5">
-              <div class="container">
-                <p class="copy-footer-28 text-center"> &copy; 2020 Market. All Rights Reserved. Design by <a
-                    href="https://w3layouts.com/">W3Layouts</a></p>
-              </div>
-            </div>
-          </div>
-        </footer>
-
-        <!-- move top -->
-        <button onclick="topFunction()" id="movetop" title="Go to top">
-          &#10548;
-        </button>
-        <script>
-          // When the user scrolls down 20px from the top of the document, show the button
-          window.onscroll = function () {
-            scrollFunction()
-          };
-
-          function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-              document.getElementById("movetop").style.display = "block";
-            } else {
-              document.getElementById("movetop").style.display = "none";
-            }
-          }
-
-          // When the user clicks on the button, scroll to the top of the document
-          function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-          }
-        </script>
-        <!-- /move top -->
-      </section>
-      <!-- //footer-28 block -->
-
-      <!-- jQuery, Bootstrap JS -->
-      <script src="assets/js/jquery-3.3.1.min.js"></script>
-      <script src="assets/js/bootstrap.min.js"></script>
-
-      <!-- Template JavaScript -->
-      
-      <script src="assets/js/owl.carousel.js"></script>
-
-      <!-- script for owlcarousel -->
-      <script>
-        $(document).ready(function () {
-          $('.owl-one').owlCarousel({
-            loop: true,
-            margin: 0,
-            nav: true,
-            responsiveClass: true,
-            autoplay: false,
-            autoplayTimeout: 5000,
-            autoplaySpeed: 1000,
-            autoplayHoverPause: false,
-            responsive: {
-              0: {
-                items: 1,
-                nav: false
-              },
-              480: {
-                items: 1,
-                nav: false
-              },
-              667: {
-                items: 1,
-                nav: true
-              },
-              1000: {
-                items: 1,
-                nav: true
-              }
-            }
-          })
-        })
-      </script>
-      <!-- //script for owlcarousel -->
-
-      <!-- disable body scroll which navbar is in active -->
-      <script>
-        $(function () {
-          $('.navbar-toggler').click(function () {
-            $('body').toggleClass('noscroll');
-          })
-        });
-      </script>
-      <!-- disable body scroll which navbar is in active -->
-
-      <script src="assets/js/jquery.magnific-popup.min.js"></script>
-      <script>
-        $(document).ready(function () {
-          $('.popup-with-zoom-anim').magnificPopup({
-            type: 'inline',
-
-            fixedContentPos: false,
-            fixedBgPos: true,
-
-            overflowY: 'auto',
-
-            closeBtnInside: true,
-            preloader: false,
-
-            midClick: true,
-            removalDelay: 300,
-            mainClass: 'my-mfp-zoom-in'
-          });
-
-          $('.popup-with-move-anim').magnificPopup({
-            type: 'inline',
-
-            fixedContentPos: false,
-            fixedBgPos: true,
-
-            overflowY: 'auto',
-
-            closeBtnInside: true,
-            preloader: false,
-
-            midClick: true,
-            removalDelay: 300,
-            mainClass: 'my-mfp-slide-bottom'
-          });
-        });
-      </script>
-
-</body>
-</html>
