@@ -8,6 +8,8 @@
 	</ol>
 			<a href="{{route('categories.create')}}" class="btn btn-primary">Buat Kategori Baru</a><br><br>
         <div class="table-responsive">
+            @include('errors')
+            
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr>

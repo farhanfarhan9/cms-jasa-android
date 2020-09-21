@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Category;
+use App\Blog;
 
 class CategoriesController extends Controller
 {
@@ -14,6 +15,7 @@ class CategoriesController extends Controller
      */
     public function index()
     {
+        
         $categories = Category::all();
 
         return view('dashboard.category.index', compact('categories'));
@@ -97,6 +99,11 @@ class CategoriesController extends Controller
      */
     public function destroy(Category $category)
     {
+        // dd($category->blogs()->count());
+        if ($category->blogs()->count()) {
+            return back()->withErrors(['error'=>'Kategori telah digunakan, tidak dapat menghapus kategori']);
+        };
+
         $category->delete();
 
         return redirect('/dashboard/categories');
