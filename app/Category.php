@@ -9,7 +9,7 @@ class Category extends Model
     protected $guarded = [];
 
     public function blogs(){
-        return $this->belongsToMany('App\Blog');
+        return $this->hasMany(Blog::class);
     }
     
 }

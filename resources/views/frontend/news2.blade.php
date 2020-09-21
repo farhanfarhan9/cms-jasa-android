@@ -1,15 +1,12 @@
 @extends('frontend')
 
 @section('content')
- <br>
- <br>
- <br>
 <div class="container">
  <div class="row">
 
       <!-- Post Content Column -->
 
-      <div class="col-lg-8">
+      <div class="col-lg-12">
 
         <!-- Title -->
         <h1 class="mt-4">Post Title</h1>
@@ -20,7 +17,7 @@
         <hr>
 
         <!-- Date/Time -->
-        <p>Posted on January 1, 2019 at 12:00 PM</p>
+        <p>Posted on January ss1, 2019 at 12:00 PM</p>
 
         <hr>
 
