@@ -10,7 +10,27 @@
           <a href="../pesansekarang" class="btn biru btn-lg text-white">Pesan Sekarang</a>
         </div>
         <div class="col-md-7 content-photo mt-md-0 mt-5">
-          <img src="assets/images/main.jpg" class="img-fluid" alt="main image">
+          <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="10000">
+            <img src="https://picsum.photos/1366/300" height="400" width="2000" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-interval="2000">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
         </div>
       </div>
       <div class="clear"></div>
