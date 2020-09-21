@@ -2,10 +2,13 @@
 @section('content')
 <div class="container">
 <div class="container-fluid">
-	<h1 class="mt-4">Dashboard ini</h1>
-	<ol class="breadcrumb mb-4">
-	    <h1 class="display-2">BLOG</h1>
-	</ol>
+	<br><br>
+
+	<div class="container py-md-5">
+    <div class="banner-wrapper text-center">
+      <h3 class="mb-4 title">Blog</h3>
+    </div>
+  </div>
 
 	<!DOCTYPE html>
 <html lang="en">
@@ -35,69 +38,36 @@
     <div class="row">
 
       <!-- Blog Entries Column -->
-      <div class="col-md-8">
-
-        <h1 class="my-4">Page Heading
-          <small>Secondary Text</small>
-        </h1>
-
+      @foreach($blogs as $blog)
+      <div class="col-md-6">
         <!-- Blog Post -->
         <div class="card mb-4">
-          <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+          <img class="card-img-top" src="{{url('storage/'.$blog->foto)}}" width="508" height="203" alt="Card image cap">
           <div class="card-body">
-            <h2 class="card-title">Post Title</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-            <a href="../news1" class="btn btn-primary">Read More &rarr;</a>
+            <h2 class="card-title">{{$blog->judul_blog}}</h2>
+            <p class="card-text">{{$blog->deskripsi}}</p>
+            <a href="blog/{{ $blog->id }}" class="btn biru btn-lg text-white">Read More &rarr;</a>
+            <!-- <a href="../news2" class="btn biru btn-lg text-white">Read More &rarr;</a> -->
+            <br>
+            <small class="text-muted">Kategori : {{$blog->category->nama_kategori}}</small>
           </div>
           <div class="card-footer text-muted">
-            Posted on January 1, 2020 
+            {{$blog->created_at->toDateString()}} 
           </div>
         </div>
-
-        <!-- Blog Post -->
-        <div class="card mb-4">
-          <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-          <div class="card-body">
-            <h2 class="card-title">Post Title</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-            <a href="../news2" class="btn btn-primary">Read More &rarr;</a>
-          </div>
-          <div class="card-footer text-muted">
-            Posted on January 1, 2020 
-          </div>
-        </div>
-
-        <!-- Blog Post -->
-        <div class="card mb-4">
-          <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-          <div class="card-body">
-            <h2 class="card-title">Post Title</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-            <a href="../news3" class="btn btn-primary">Read More &rarr;</a>
-          </div>
-          <div class="card-footer text-muted">
-            Posted on January 1, 2020 
-          </div>
-        </div>
-
-        <!-- Pagination -->
-        <ul class="pagination justify-content-center mb-4">
-          <li class="page-item">
-            <a class="page-link" href="#">&larr; Older</a>
-          </li>
-          <li class="page-item disabled">
-            <a class="page-link" href="#">Newer &rarr;</a>
-          </li>
-        </ul>
-
       </div>
+      @endforeach
 
-      <!-- Sidebar Widgets Column -->
-      <div class="col-md-4">
-
-       
-    <!-- /.row -->
-
+    </div>
+        <!-- Pagination -->
+    <ul class="pagination justify-content-center mb-4">
+      <li class="page-item">
+        <a class="page-link" href="#">&larr; Older</a>
+      </li>
+      <li class="page-item disabled">
+        <a class="page-link" href="#">Newer &rarr;</a>
+      </li>
+    </ul>
   </div>
   <!-- /.container -->
 
