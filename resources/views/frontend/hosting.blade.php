@@ -3,10 +3,10 @@
 
 <section id="home" class="w3l-banner py-5">
 <div class="container py-md-5">
-<div class="banner-wrapper text-center">
-<h3 class="mb-4 title">Jual Hosting Murah.</h3>
-<p class="mx-lg-5">Beli hosting di jasa-website.id. dapatkan harga terbaik dan promo menarik.<br /> dapatkan promo terbaik dari kami.</p>
-</div>
+	<div class="banner-wrapper text-center">
+		<h3 class="mb-4 title">Jual Hosting Murah.</h3>
+		<p class="mx-lg-5">Beli hosting di jasa-website.id. dapatkan harga terbaik dan promo menarik.<br /> dapatkan promo terbaik dari kami.</p>
+	</div>
 </div>
 <div class="container pt-lg-5 pt-sm-4">
 	<div class="maghny-gd-1">
@@ -178,7 +178,7 @@
 		</div>
 	</div>
 </div>
-
+</section>
 
 
 @endsection
