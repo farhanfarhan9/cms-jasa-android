@@ -2,39 +2,35 @@
 
 @section('content')
 <!-- index-block1 -->
-<div class="w3l-index-block1">
-  <div class="content py-5">
-    <div class="container">
-      <div class="row align-items-center py-md-5 py-3">
-        <div class="col-md-5 content-left pt-md-0 pt-5">
-          <a href="../pesansekarang" class="btn biru btn-lg text-white">Pesan Sekarang</a>
-        </div>
-        <div class="col-md-7 content-photo mt-md-0 mt-5">
-          <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-interval="10000">
-            <img src="https://picsum.photos/1366/300" height="400" width="2000" class="d-block w-100" alt="...">
+<div class="">
+  <div class="content">
+      <!-- <div class="row align-items-center"> -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              @foreach($sliders as $key => $slider)
+              <div class="carousel-item {{$key == 0 ? 'active' : '' }}">
+                  <img src="{{url('storage/'.$slider->foto)}}" class="d-block w-100" height="650" width="100%"  alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <p><a href="../pesansekarang" class="btn biru btn-lg text-white">Pesan Sekarang</a></p>
+                  </div> 
+              </div>
+              @endforeach
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-          <div class="carousel-item" data-interval="2000">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-        </div>
-      </div>
       <div class="clear"></div>
-    </div>
   </div>
 </div>
 <!-- //index-block1 -->

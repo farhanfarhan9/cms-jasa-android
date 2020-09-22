@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use App\Blog;
 use App\Category;
 
@@ -44,6 +45,8 @@ class BlogsController extends Controller
         $new_blog->judul_blog = $request->get('judul');
         $new_blog->deskripsi = $request->get('deskripsi');
         $new_blog->konten = $request->get('konten');
+        $slug = Str::slug($request->judul, '-');
+        $new_blog->slug = $slug;
         if ($request->file('foto')) {
             $file = $request->file('foto')->store('blog','public');
             $new_blog->foto = $file;
@@ -90,6 +93,8 @@ class BlogsController extends Controller
         $blog = \App\Blog::findOrFail($id);
         $blog->category_id = $request->get('id_kategori');
         $blog->judul_blog = $request->get('judul');
+        $slug = Str::slug($request->judul, '-');
+        $blog->slug = $slug;
         $blog->deskripsi = $request->get('deskripsi');
         $blog->konten = $request->get('konten');
         if ($request->file('foto')) {

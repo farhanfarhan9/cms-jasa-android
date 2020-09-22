@@ -6,7 +6,6 @@
 	<ol class="breadcrumb mb-4">
 	    <li class="breadcrumb-item active">Dashboard / Kontak</li>
 	</ol>
-			<a href="{{route('contacts.create')}}" class="btn btn-primary">Buat Kontak Baru</a><br><br>
     <div class="table-responsive">
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thead>
@@ -35,7 +34,7 @@
 							@csrf
 							@method('DELETE')
 							<div class="control">
-								<button type="submit" class="btn btn-sm btn-danger">Delete</button>
+								<button type="submit" class="btn btn-sm btn-danger" onClick="return confirm('Yakin ingin menghapus item?')">Delete</button>
 							</div>
 						</form>
                 	</td>

@@ -37,16 +37,24 @@ class ContactsController extends Controller
     public function store(Request $request)
     {
 
-        $validated = request()->validate([
-            'nama_kontak'=>['required', 'min:3', 'max:255'],
-            'alamat'=>['required', 'min:3', 'max:255'],
-            'email'=>['required', 'min:3', 'max:255'],
-            'pesan'=>['required', 'min:3', 'max:255'],
+        // $validated = request()->validate([
+        //     'nama_kontak'=>['required', 'min:3', 'max:255'],
+        //     'alamat'=>['required', 'min:3', 'max:255'],
+        //     'email'=>['required', 'min:3', 'max:255'],
+        //     'pesan'=>['required', 'min:3', 'max:255'],
+        // ]);
+        // dd(request());
+        Contact::create([
+            'nama_kontak'=>request('nama_kontak'),
+            'alamat'=>request('alamat'),
+            'email'=>request('email'),
+            'pesan'=>request('pesan'),
         ]);
 
-        Contact::create($validated);
+        // $kontak = Contact::create($validated);
+        
 
-        return redirect('/dashboard/contacts');
+        return redirect()->back()->with('message', 'Terima kasih telah mengirimi pesan kepada kami');
 
     }
 

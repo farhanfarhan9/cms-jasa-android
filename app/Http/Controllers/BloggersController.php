@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Category;
 use App\Blog;
+use App\Category;
 
-class CategoriesController extends Controller
+class BloggersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +15,8 @@ class CategoriesController extends Controller
      */
     public function index()
     {
-        
-        $categories = Category::all();
-
-        return view('dashboard.category.index', compact('categories'));
+        $blogs = Blog::all();
+        return view('frontend.blog', compact('blogs'));
     }
 
     /**
@@ -27,8 +25,8 @@ class CategoriesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {  
-        return view('dashboard.category.create');
+    {
+        //
     }
 
     /**
@@ -37,18 +35,9 @@ class CategoriesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store()
+    public function store(Request $request)
     {
-
-        Category::create([
-            'nama_kategori'=>request('nama_kategori'),
-        ]);
-
-        // Category::create([
-        //     'nama_kategori'=>request('nama_kategori'),
-        // ]);
-
-        return redirect('/dashboard/categories');
+        //
     }
 
     /**
@@ -57,9 +46,18 @@ class CategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    // public function show(Blog $blog)
+    public function show($slug)
     {
-        //
+        // $categories = Category::all();
+        // return view('frontend.blogpost', ['blog'=>$blog, 'categories' => $categories]);
+
+        $blog = Blog::where('slug', $slug)->first();
+        return view('frontend.blogpost', ['blog'=>$blog]);
+
+
+        // $tampilkan = Crud::where('slug_judul', $slug)->first();
+        // return view('tampil')->with('tampilkan', $tampilkan);
     }
 
     /**
@@ -68,10 +66,9 @@ class CategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Category $category)
+    public function edit($id)
     {
-        return view('dashboard.category.edit', compact('category'));
-        
+        //
     }
 
     /**
@@ -81,14 +78,9 @@ class CategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Category $category)
+    public function update(Request $request, $id)
     {
-
-        $category->nama_kategori = request('nama_kategori');
-
-        $category->save();
-        return redirect('/dashboard/categories');
-
+        //
     }
 
     /**
@@ -97,15 +89,8 @@ class CategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Category $category)
+    public function destroy($id)
     {
-        // dd($category->blogs()->count());
-        if ($category->blogs()->count()) {
-            return back()->withErrors(['error'=>'Kategori telah digunakan, tidak dapat menghapus kategori']);
-        };
-
-        $category->delete();
-
-        return redirect('/dashboard/categories');
+        //
     }
 }

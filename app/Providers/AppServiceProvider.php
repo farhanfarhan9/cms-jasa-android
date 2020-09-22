@@ -23,6 +23,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // parent::boot($router);
+
+        // \Route::bind('blog', function($slug) {
+        //     return \App\Blog::where('slug', $slug)->firstOrFail();
+        // });
     }
 }
