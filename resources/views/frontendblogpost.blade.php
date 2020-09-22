@@ -8,8 +8,7 @@ Author URL: http://w3layouts.com
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content="Jasa pembuatan Android,Website, Artikel">
-    <meta name="description" content="Jasa Pembuatan Aplikasi Android, Website dan Artikel terpercaya di Medan">
+    @yield('meta')
     <title>@yield('title')</title>
     <!-- web fonts -->
     <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">

@@ -1,5 +1,8 @@
-@extends('frontend')
-
+@extends('frontendblogpost')
+@section('meta')
+  <meta name="keywords" content="{{ $blog->judul_blog }}">
+  <meta name="description" content="{{ $blog->deskripsi}}">
+@endsection
 @section('content')
 <br>
 <br>
@@ -25,7 +28,7 @@
         <hr>
 
         <!-- Preview Image -->
-        <img class="img-fluid rounded text-center" src="{{asset('storage/'.$blog->foto)}}" width="900" alt="">
+        <img class="img-fluid rounded text-center" src="{{asset('storage/'.$blog->foto)}}" width="900" alt="{{ $blog->judul_blog }}">
 
         <hr>
 

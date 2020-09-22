@@ -46,10 +46,18 @@ class BloggersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Blog $blog)
+    // public function show(Blog $blog)
+    public function show($slug)
     {
-        $categories = Category::all();
-        return view('frontend.blogpost', ['blog'=>$blog, 'categories' => $categories]);
+        // $categories = Category::all();
+        // return view('frontend.blogpost', ['blog'=>$blog, 'categories' => $categories]);
+
+        $blog = Blog::where('slug', $slug)->first();
+        return view('frontend.blogpost', ['blog'=>$blog]);
+
+
+        // $tampilkan = Crud::where('slug_judul', $slug)->first();
+        // return view('tampil')->with('tampilkan', $tampilkan);
     }
 
     /**

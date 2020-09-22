@@ -19,7 +19,9 @@ Route::get('/about', function () {
     return view('frontend.about');
 });
 
-Route::resource('/blog','BloggersController');
+// Route::resource('/blog','BloggersController');
+Route::get('blog', 'BloggersController@index')->name('blog.index');
+Route::get('blog/{slug}', 'BloggersController@show')->name('blog.show');
 // Route::get('/blog', function () {
 //     return view('frontend.blog');
 
