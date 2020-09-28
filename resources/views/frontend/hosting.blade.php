@@ -35,7 +35,7 @@
 										<li><i class="ion-android-checkmark-circle"></i> External Backup Bulanan</li>
 										<li><i class="ion-android-checkmark-circle"></i> Free Setup Domain, Jika Sudah Punya Domain</li>
 										</ul>
-										<a href="#contact" class="btn biru btn-lg text-white">Pesan</a>
+										<a href="https://wa.me/081263630633?text=Saya%20tertarik%20dengan%20jasa%20Personal%20Blogger%20I" class="btn biru btn-lg text-white">Pesan</a>
 									</div>
 								</div>
 							</div>
@@ -44,8 +44,8 @@
 							<div class="hosting wow fadeInLeft">
 								<div class="card">
 									<div class="card-body p-5">
-										<h3>Personal Blogger I</h3>
-										<h4><sup>Rp</sup>15.000/<span>Bulan</span></h4>
+										<h3>Personal Blogger II</h3>
+										<h4><sup>Rp</sup>22.000/<span>Bulan</span></h4>
 										<ul>
 										<li><i class="ion-android-checkmark-circle"></i> Min 12 Bulan</li>
 										<li><i class="ion-android-checkmark-circle"></i> 500 MB Space</li>
@@ -61,7 +61,7 @@
 										<li><i class="ion-android-checkmark-circle"></i> External Backup Bulanan</li>
 										<li><i class="ion-android-checkmark-circle"></i> Free Setup Domain, Jika Sudah Punya Domain</li>
 										</ul>
-										<a href="#contact" class="btn biru btn-lg text-white">Pesan</a>
+										<a href="https://wa.me/081263630633?text=Saya%20tertarik%20dengan%20jasa%20Personal%20Blogger%20II" class="btn biru btn-lg text-white">Pesan</a>
 									</div>
 								</div>
 							</div>
@@ -70,8 +70,8 @@
 							<div class="hosting wow fadeInLeft">
 								<div class="card">
 									<div class="card-body p-5">
-										<h3>Personal Blogger I</h3>
-										<h4><sup>Rp</sup>15.000/<span>Bulan</span></h4>
+										<h3>Personal Blogger III</h3>
+										<h4><sup>Rp</sup>35.000/<span>Bulan</span></h4>
 										<ul>
 										<li><i class="ion-android-checkmark-circle"></i> Min 12 Bulan</li>
 										<li><i class="ion-android-checkmark-circle"></i> 500 MB Space</li>
@@ -87,7 +87,7 @@
 										<li><i class="ion-android-checkmark-circle"></i> External Backup Bulanan</li>
 										<li><i class="ion-android-checkmark-circle"></i> Free Setup Domain, Jika Sudah Punya Domain</li>
 										</ul>
-										<a href="#contact" class="btn biru btn-lg text-white">Pesan</a>
+										<a href="https://wa.me/081263630633?text=Saya%20tertarik%20dengan%20jasa%20Personal%20Blogger%20III" class="btn biru btn-lg text-white">Pesan</a>
 									</div>
 								</div>
 							</div>
@@ -98,8 +98,8 @@
 							<div class="hosting wow fadeInLeft">
 								<div class="card">
 									<div class="card-body p-5">
-										<h3>Personal Blogger I</h3>
-										<h4><sup>Rp</sup>15.000/<span>Bulan</span></h4>
+										<h3>Personal Blogger IV</h3>
+										<h4><sup>Rp</sup>40.000/<span>Bulan</span></h4>
 										<ul>
 										<li><i class="ion-android-checkmark-circle"></i> Min 12 Bulan</li>
 										<li><i class="ion-android-checkmark-circle"></i> 500 MB Space</li>
@@ -115,7 +115,7 @@
 										<li><i class="ion-android-checkmark-circle"></i> External Backup Bulanan</li>
 										<li><i class="ion-android-checkmark-circle"></i> Free Setup Domain, Jika Sudah Punya Domain</li>
 										</ul>
-										<a href="#contact" class="btn biru btn-lg text-white">Pesan</a>
+										<a href="https://wa.me/081263630633?text=Saya%20tertarik%20dengan%20jasa%20Personal%20Blogger%20IV" class="btn biru btn-lg text-white">Pesan</a>
 									</div>
 								</div>
 							</div>
@@ -124,8 +124,8 @@
 							<div class="hosting wow fadeInLeft">
 								<div class="card">
 									<div class="card-body p-5">
-										<h3>Personal Blogger I</h3>
-										<h4><sup>Rp</sup>15.000/<span>Bulan</span></h4>
+										<h3>Personal Blogger V</h3>
+										<h4><sup>Rp</sup>45.000/<span>Bulan</span></h4>
 										<ul>
 										<li><i class="ion-android-checkmark-circle"></i> Min 12 Bulan</li>
 										<li><i class="ion-android-checkmark-circle"></i> 500 MB Space</li>
@@ -141,7 +141,7 @@
 										<li><i class="ion-android-checkmark-circle"></i> External Backup Bulanan</li>
 										<li><i class="ion-android-checkmark-circle"></i> Free Setup Domain, Jika Sudah Punya Domain</li>
 										</ul>
-										<a href="#contact" class="btn biru btn-lg text-white">Pesan</a>
+										<a href="https://wa.me/081263630633?text=Saya%20tertarik%20dengan%20jasa%20Personal%20Blogger%20V" class="btn biru btn-lg text-white">Pesan</a>
 									</div>
 								</div>
 							</div>
@@ -150,8 +150,8 @@
 							<div class="hosting wow fadeInLeft">
 								<div class="card">
 									<div class="card-body p-5">
-										<h3>Personal Blogger I</h3>
-										<h4><sup>Rp</sup>15.000/<span>Bulan</span></h4>
+										<h3>Personal Blogger VI</h3>
+										<h4><sup>Rp</sup>80.000/<span>Bulan</span></h4>
 										<ul>
 										<li><i class="ion-android-checkmark-circle"></i> Min 12 Bulan</li>
 										<li><i class="ion-android-checkmark-circle"></i> 500 MB Space</li>
@@ -167,7 +167,7 @@
 										<li><i class="ion-android-checkmark-circle"></i> External Backup Bulanan</li>
 										<li><i class="ion-android-checkmark-circle"></i> Free Setup Domain, Jika Sudah Punya Domain</li>
 										</ul>
-										<a href="#contact" class="btn biru btn-lg text-white">Pesan</a>
+										<a href="https://wa.me/081263630633?text=Saya%20tertarik%20dengan%20jasa%20Personal%20Blogger%20VI" class="btn biru btn-lg text-white">Pesan</a>
 									</div>
 								</div>
 							</div>

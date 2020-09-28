@@ -40,7 +40,11 @@ Author URL: http://w3layouts.com
     <!-- Template CSS -->
     <link rel="stylesheet" href="../assets/css/style-starter.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
     <style type="text/css">
+      .abu{
+        background-color: #e3e3e3;
+      }
       .biru{
         background-color: #2c96d2;
       }
@@ -52,6 +56,24 @@ Author URL: http://w3layouts.com
       }
       ul li{
         text-decoration: none;
+      }
+      .float{
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        font-size:30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index:100;
+      }
+
+      .my-float{
+        margin-top:16px;
       }
     </style>
   </head>
@@ -94,24 +116,27 @@ Author URL: http://w3layouts.com
           </li>
         </ul>
         <div class="form-inline">
-            <a href="../pesansekarang" class="btn biru btn-lg text-white">Pesan Sekarang</a>
+            <a href="https://wa.me/081263630633?text=Saya%20tertarik%20dengan%20jasa%20yang%20anda%20tawarkan" class="btn biru btn-lg text-white">Pesan Sekarang</a>
         </div>
       </div>
     </div>
   </nav>
 </div>
 @yield('content')
+<a href="https://wa.me/081263630633?text=Saya%20tertarik%20dengan%20jasa%20yang%20anda%20tawarkan" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
       <!-- footer-28 block -->
 <div class="bg-footer">
-<section class="w3l-footer-29-main">
-  <div class="footer-29 py-5">
-    <div class="container py-lg-4">
-      <div class="row footer-top-29">
-      <div class="col-lg-3 col-md-6 col-sm-5 footer-list-29 footer-1">
-      <div class="footer-logo mb-4">
-      <a class="navbar-brand" href="
-      <span></span><img src="https://jasa-website.id/assets/images/logoalgotech.png" alt="Jasa Pembuatan Website Profesional" title="Jasa Pembuatan Website Profesional" style="height:55px;" /><span class="logo"></span></a>
-        </div>
+  <section class="w3l-footer-29-main">
+    <div class="footer-29 py-5">
+      <div class="container py-lg-4">
+        <div class="row footer-top-30">
+          <div class="col-lg-2 col-md-7 col-sm-5 footer-list-29 footer-1">
+            <div class="footer-logo mb-1" style="margin-top: -100px">
+              <a class="navbar-brand" href="
+              <span></span><img src="https://jasa-website.id/assets/images/logoalgotech.png" alt="Jasa Pembuatan Website Profesional" title="Jasa Pembuatan Website Profesional" style="height:100px;" /><span class="logo"></span></a>
+            </div>
          <ul>
             <a class="navbar-brand" href="index.html"><span class=""></span><TABLE><img src="../assets/images/logoalgotech.png" width="140px" alt="jasa pembuatan website"></TABLE></a>
             <li><a href=""><span class="fa fa-phone"></span> +62 812 6363 0633</a></li>
@@ -131,7 +156,7 @@ Author URL: http://w3layouts.com
           <li><a href="#">Kontak</a></li>
         </ul>
       </div>
-      <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-3 mt-lg-0 mt-5">
+      <div class="col-lg-3 col-md-6 col-sm-5 col-6 footer-list-29 footer-3 mt-lg-0 mt-5">
         <h6 class="footer-title-29">Layanan Kami</h6>
         <ul>
           <li><a href="" title="Jasa Pembuatan Website">Jasa Pembuatan Website</a></li>
@@ -141,7 +166,7 @@ Author URL: http://w3layouts.com
           <li><a href="" title="Jasa Perbaikan Website">Jasa Perbaikan Website</a></li>
         </ul>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5">
+      <div class="col-lg-4 col-md-6 col-sm-7 footer-list-30 footer-4 mt-lg-0 mt-6">
         <h6 class="footer-title-29">Hubungi Kami</h6>
         <p>Apabila anda memiliki pertanyaan lebih lanjut, kami siap membantu anda untuk menjawab semua pertanyaan anda.</p>
         <form action="#" class="subscribe" method="post">
@@ -163,7 +188,7 @@ Author URL: http://w3layouts.com
     <div class="row bottom-copies">
       <p class="col-lg-8 copy-footer-29">© 2020 Jasa Pembuatan Website Profesional<a href="#" target="_blank">
       Algotech.co.id</a></p>
-      <div class="col-lg-4 main-social-footer-29">
+      <div class="col-lg-4 main-social-footer-29 text-right">
         <a href="" class="facebook"><span class="fa fa-facebook"></span></a>
         <a href="" class="twitter"><span class="fa fa-twitter"></span></a>
         <a href="" class="instagram"><span class="fa fa-instagram"></span></a>
@@ -171,8 +196,8 @@ Author URL: http://w3layouts.com
       </div>
     </div>
   </div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</section>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </section>
 </div>
